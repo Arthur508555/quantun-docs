@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quantun Docs</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+    pre {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    button {
+      margin-top: 8px;
+      padding: 6px 12px;
+      background: #00ffcc;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Quantun UI</h1>
+<p>Simple Roblox UI Library</p>
+
+<h2>Loadstring</h2>
+
+<pre><code id="code1">
+loadstring(game:HttpGet("LINK_DO_SEU_SCRIPT"))()
+</code></pre>
+
+<button onclick="copyCode('code1')">Copy</button>
+
+<script>
+function copyCode(id) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Código copiado!");
+  });
+}
+</script>
+
+</body>
+</html>
